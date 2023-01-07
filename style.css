@@ -1,0 +1,168 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.content {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.head {
+  cursor: pointer;
+  background-color: rgba(94, 13, 101, 0.7);
+  width: 36px;
+  height: 36px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-sizing: border-box;
+  border: 2.5px solid black;
+  margin: 0 auto;
+  position: relative;
+}
+
+.right-antenna {
+  position: absolute;
+  width: 2.5px;
+  height: 7px;
+  background-color: black;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  transform: rotate(45deg);
+  right: -4px;
+  margin-top: -4px;
+}
+
+.right-ear {
+  position: absolute;
+  box-sizing: border-box;
+  border-top: 2.5px solid black;
+  border-bottom: 2.5px solid black;
+  border-right: 2.5px solid black;
+  right: -7px;
+  bottom: 5px;
+  background-color: rgba(94, 13, 101, 0.7);
+  height: 15px;
+  width: 5px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.left-antenna {
+  position: absolute;
+  width: 2.5px;
+  height: 7px;
+  background-color: black;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  transform: rotate(-45deg);
+  margin-left: -4px;
+  margin-top: -4px;
+}
+
+.left-ear {
+  position: absolute;
+  box-sizing: border-box;
+  border-top: 2.5px solid black;
+  border-bottom: 2.5px solid black;
+  border-left: 2.5px solid black;
+  margin-left: -7px;
+  bottom: 5px;
+  background-color: rgba(94, 13, 101, 0.7);
+  height: 15px;
+  width: 5px;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+.eye {
+  left: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50px;
+  box-sizing: border-box;
+  border: 2.5px solid black;
+  margin: 0 auto;
+  margin-top: 5px;
+  position: absolute;
+}
+
+.lid {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(94, 13, 101, 1);
+  border-radius: 50px;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+}
+
+.blink {
+  animation: blink 5s linear infinite;
+}
+
+.read {
+  animation: read 1s linear infinite;
+}
+
+@keyframes read {
+  0% {
+    margin-left: 35%;
+  }
+  50% {
+    margin-left: 70%;
+  }
+  60% {
+    margin-left: 0%;
+  }
+  100% {
+    margin-left: 35%;
+  }
+}
+
+@keyframes blink {
+  0%, 10% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 0;
+  }
+  20%, 50%, 83% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 1;
+  }
+  88%, 100% {
+    opacity: 0;
+  }
+}
+
+.iris {
+  width: 5px;
+  height: 5px;
+  margin: auto;
+  margin-top: 5.5px;
+  background-color: black;
+  border-radius: 50px;
+}
+
+.mouth {
+  left: 0;
+  right: 0;
+  bottom: 3px;
+  margin: auto;
+  width: 3px;
+  height: 2.5px;
+  background-color: black;
+  border-radius: 5px;
+  margin-top: 2px;
+  position: absolute;
+  display: none;
+}
